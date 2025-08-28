@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v5
 
       - name: Log in to ghcr.io
-        run: ${{ secrets.GHCR_TOKEN }} | docker login ghcr.io --username jeff-soares --password-stdin
+        run: echo "${{ secrets.GHCR_TOKEN }}" | docker login ghcr.io --username jeff-soares --password-stdin
 
       - name: Build image
         run: docker build . --tag ghcr.io/jeff-soares/android-env:latest
