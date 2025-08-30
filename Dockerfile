@@ -1,5 +1,7 @@
 FROM ubuntu:24.04
 
+LABEL org.opencontainers.image.source https://github.com/Jeff-Soares/android-env-image
+
 ARG JDK_VERSION=17.0.16-zulu
 ARG KOTLIN_VERSION=2.2.0
 ARG ANDROID_SDK_VERSION=13114758
