@@ -9,6 +9,8 @@ ARG NODE_VERSION=v22.18.0
 ARG RUBY_VERSION=3.4.5
 
 ENV DEBIAN_FRONTEND=noninteractive
+ENV LANG en_US.UTF-8
+ENV LC_ALL en_US.UTF-8
 ENV SDKMAN_DIR="/root/.sdkman"
 ENV JAVA_HOME="/root/.sdkman/candidates/java/current"
 ENV ANDROID_HOME="/opt/android-sdk"
